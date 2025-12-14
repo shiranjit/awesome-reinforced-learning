@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this if you are referencing any or all of the documents in this repository"
+authors:
+  - family-names: "Ran"
+    given-names: "Shir"
+    orcid: "shirishranjit.com"
+title: "Awesome Reinforce Learning (RL)"
+version: 1.0.0
+date-released: 2025-12-14
+url: "https://github.com/shiranjit/awesome-reinforced-learning/"
