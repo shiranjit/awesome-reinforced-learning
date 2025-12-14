@@ -1,3 +1,211 @@
+@misc{ha2018worldmodels,
+  title         = {World Models},
+  author        = {Ha, David and Schmidhuber, J{\"u}rgen},
+  year          = {2018},
+  doi           = {10.5281/zenodo.1207631},
+  url           = {https://zenodo.org/record/1207631},
+  note          = {arXiv:1803.10122},
+  annote        = {Seminal modern world-model paper: learn latent dynamics (VAE + RNN) and train policies using model features or entirely “in imagination,” influencing a large wave of model-based RL.}
+}
+
+@misc{worldmodels2018interactive,
+  title  = {World Models (Interactive Project Page)},
+  author = {Ha, David and Schmidhuber, J{\"u}rgen},
+  year   = {2018},
+  url    = {https://worldmodels.github.io/},
+  annote = {Canonical companion site with explanations and demos; great link target for an Awesome list entry.}
+}
+
+@software{ha2018worldmodelsexperiments,
+  title  = {World Models Experiments},
+  author = {Ha, David},
+  year   = {2018},
+  url    = {https://github.com/hardmaru/WorldModelsExperiments},
+  annote = {Reference implementation used widely to reproduce the World Models experiments and learn the pipeline end-to-end.}
+}
+
+@online{ha2018worldmodelsexperimentsblog,
+  title  = {World Models Experiments (Blog Post)},
+  author = {Ha, David},
+  year   = {2018},
+  month  = jun,
+  url    = {https://blog.otoro.net/2018/06/09/world-models-experiments/},
+  annote = {Step-by-step reproduction guide; extremely useful for practitioners and readers of the original paper.}
+}
+
+@inproceedings{ha2018recurrentworldmodels,
+  title     = {Recurrent World Models Facilitate Policy Evolution},
+  author    = {Ha, David and Schmidhuber, J{\"u}rgen},
+  booktitle = {Advances in Neural Information Processing Systems 31 (NeurIPS 2018)},
+  year      = {2018},
+  url       = {https://arxiv.org/abs/1809.01999},
+  note      = {Proceedings record: 10.5555/3327144.3327171},
+  annote    = {Shows training/optimizing policies inside a learned recurrent world model and transferring back to the real env; key for “imagination-based” control.}
+}
+
+@inproceedings{schmidhuber1990onlinealgorithm,
+  title     = {An On-Line Algorithm for Dynamic Reinforcement Learning and Planning in Reactive Environments},
+  author    = {Schmidhuber, J{\"u}rgen},
+  booktitle = {Proceedings of the International Joint Conference on Neural Networks (IJCNN)},
+  year      = {1990},
+  pages     = {253--258},
+  doi       = {10.1109/IJCNN.1990.137723},
+  annote    = {Early differentiable model-based RL: recurrent world model + planning/control ideas that anticipate later “world model” lines of work.}
+}
+
+@techreport{schmidhuber1990makingworlddifferentiable,
+  title       = {Making the World Differentiable: On Using Self-Supervised Fully Recurrent Neural Networks for Dynamic Reinforcement Learning and Planning in Non-Stationary Environments},
+  author      = {Schmidhuber, J{\"u}rgen},
+  institution = {Institut f{\"u}r Informatik, Technische Universit{\"a}t M{\"u}nchen},
+  year        = {1990},
+  number      = {FKI-126-90},
+  annote      = {Classic technical report on training recurrent predictive models of the environment and using them for RL/planning under non-stationarity.}
+}
+
+@inproceedings{schmidhuber1991curiousmodelbuilding,
+  title     = {Curious Model-Building Control Systems},
+  author    = {Schmidhuber, J{\"u}rgen},
+  booktitle = {Proceedings of the International Joint Conference on Neural Networks (IJCNN)},
+  year      = {1991},
+  pages     = {1458--1463},
+  annote    = {A core intrinsic-motivation formulation: agents act to improve their world model (curiosity), shaping modern exploration methods in RL.}
+}
+
+@inproceedings{schmidhuber1991curiosityboredom,
+  title     = {A Possibility for Implementing Curiosity and Boredom in Model-Building Neural Controllers},
+  author    = {Schmidhuber, J{\"u}rgen},
+  booktitle = {From Animals to Animats: Proceedings of the First International Conference on Simulation of Adaptive Behavior},
+  year      = {1991},
+  pages     = {222--227},
+  publisher = {MIT Press},
+  doi       = {10.7551/mitpress/3115.003.0030},
+  annote    = {Foundational intrinsic reward idea (novelty / learning progress) for exploration—still central in curiosity-driven RL.}
+}
+
+@inproceedings{DBLP:conf/nips/Schmidhuber90,
+  author       = {J{\"{u}}rgen Schmidhuber},
+  editor       = {Richard Lippmann and John E. Moody and David S. Touretzky},
+  title        = {Reinforcement Learning in Markovian and Non-Markovian Environments},
+  booktitle    = {Advances in Neural Information Processing Systems 3 (NIPS 1990)},
+  pages        = {500--506},
+  publisher    = {Morgan Kaufmann},
+  year         = {1990},
+  url          = {http://papers.nips.cc/paper/393-reinforcement-learning-in-markovian-and-non-markovian-environments},
+  annote       = {Early treatment of RL under partial observability/non-Markov settings—an enduring theme for world models + memory-based agents.}
+}
+
+@article{schmidhuber1992historycompression,
+  title   = {Learning Complex, Extended Sequences Using the Principle of History Compression},
+  author  = {Schmidhuber, J{\"u}rgen},
+  journal = {Neural Computation},
+  year    = {1992},
+  volume  = {4},
+  number  = {2},
+  pages   = {234--242},
+  doi     = {10.1162/neco.1992.4.2.234},
+  annote  = {Memory and representation learning for long temporal dependencies; highly relevant to POMDP RL and predictive world modeling.}
+}
+
+@article{wiering1997hqlearning,
+  title   = {HQ-Learning},
+  author  = {Wiering, Marco and Schmidhuber, J{\"u}rgen},
+  journal = {Adaptive Behavior},
+  year    = {1997},
+  volume  = {6},
+  number  = {2},
+  pages   = {219--246},
+  doi     = {10.1177/105971239700600202},
+  annote  = {Hierarchical / decomposition-flavored RL ideas for POMDP-like settings; helps connect memory + hierarchy themes in Schmidhuber’s RL work.}
+}
+
+@article{hochreiter1997lstm,
+  title   = {Long Short-Term Memory},
+  author  = {Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  journal = {Neural Computation},
+  year    = {1997},
+  volume  = {9},
+  number  = {8},
+  pages   = {1735--1780},
+  doi     = {10.1162/neco.1997.9.8.1735},
+  annote  = {Core sequence-memory architecture; enables practical RL in partially observable environments and underpins many world-model approaches.}
+}
+
+@article{sehnke2010pgpe,
+  title   = {Parameter-Exploring Policy Gradients},
+  author  = {Sehnke, Frank and Osendorfer, Christian and R{\"u}ckstiess, Thomas and Graves, Alex and Peters, Jan and Schmidhuber, J{\"u}rgen},
+  journal = {Neural Networks},
+  year    = {2010},
+  volume  = {23},
+  number  = {4},
+  pages   = {551--559},
+  doi     = {10.1016/j.neunet.2009.12.004},
+  annote  = {Influential policy-search method (parameter-space exploration) for RL/POMDP control with lower-variance gradient estimates.}
+}
+
+@article{schmidhuber2010intrinsicmotivation,
+  title   = {Formal Theory of Creativity, Fun, and Intrinsic Motivation (1990--2010)},
+  author  = {Schmidhuber, J{\"u}rgen},
+  journal = {IEEE Transactions on Autonomous Mental Development},
+  year    = {2010},
+  volume  = {2},
+  number  = {3},
+  pages   = {230--247},
+  doi     = {10.1109/TAMD.2010.2056368},
+  annote  = {Theory backbone for curiosity-driven exploration: intrinsic reward via compression progress / learning progress; widely cited in intrinsic-motivation RL.}
+}
+
+@article{schmidhuber2006developmentalrobotics,
+  title   = {Developmental Robotics, Optimal Artificial Curiosity, Creativity, Music, and the Fine Arts},
+  author  = {Schmidhuber, J{\"u}rgen},
+  journal = {Connection Science},
+  year    = {2006},
+  volume  = {18},
+  number  = {2},
+  pages   = {173--187},
+  doi     = {10.1080/09540090600768658},
+  annote  = {Accessible synthesis of optimal curiosity and intrinsic motivation ideas that later reappear across exploration-heavy RL methods.}
+}
+
+@article{schmidhuber2015deeplearningoverview,
+  title   = {Deep Learning in Neural Networks: An Overview},
+  author  = {Schmidhuber, J{\"u}rgen},
+  journal = {Neural Networks},
+  year    = {2015},
+  volume  = {61},
+  pages   = {85--117},
+  doi     = {10.1016/j.neunet.2014.09.003},
+  annote  = {Broad, highly cited overview that also connects deep learning, sequence models, and RL threads (useful “bridge reference” in an Awesome RL repo).}
+}
+
+@article{wierstra2014nes,
+  title   = {Natural Evolution Strategies},
+  author  = {Wierstra, Daan and Schaul, Tom and Peters, Jan and Schmidhuber, J{\"u}rgen},
+  journal = {Journal of Machine Learning Research},
+  year    = {2014},
+  volume  = {15},
+  pages   = {949--980},
+  annote  = {Key neuroevolution / black-box optimization method often used as an RL alternative; important in the ES-vs-RL lineage and policy search.}
+}
+
+@inproceedings{cuccu2011intrinsicneuroevolution,
+  title     = {Intrinsically Motivated Neuroevolution for Vision-Based Reinforcement Learning},
+  author    = {Cuccu, Giuseppe and Luciw, Matthew and Schmidhuber, J{\"u}rgen and Gomez, Faustino},
+  booktitle = {2011 IEEE International Conference on Development and Learning (ICDL)},
+  year      = {2011},
+  doi       = {10.1109/DEVLRN.2011.6037324},
+  annote    = {Combines intrinsic motivation + neuroevolution for RL from pixels; relevant precursor to modern curiosity+representation learning pipelines.}
+}
+
+@inproceedings{koutnik2013evolving,
+  title     = {Evolving Large-Scale Neural Networks for Vision-Based Reinforcement Learning},
+  author    = {Koutn{\'i}k, Jan and Cuccu, Giuseppe and Schmidhuber, J{\"u}rgen and Gomez, Faustino},
+  booktitle = {Proceedings of the 15th Annual Conference on Genetic and Evolutionary Computation (GECCO '13)},
+  year      = {2013},
+  pages     = {1061--1068},
+  doi       = {10.1145/2463372.2463509},
+  annote    = {High-impact neuroevolution + RL from raw pixels; helps ground the “evolutionary RL / policy search” branch tied to IDSIA work.}
+}
+
 @article{schmidhuber2015learning,
   title         = {On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models},
   author        = {Schmidhuber, Juergen},
