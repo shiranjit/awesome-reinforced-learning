@@ -249,3 +249,164 @@
   year={2017},
   url={https://arxiv.org/abs/1707.06347}
 }
+
+@book{sutton2018reinforcement,
+  title     = {Reinforcement Learning: An Introduction},
+  author    = {Sutton, Richard S. and Barto, Andrew G.},
+  publisher = {MIT Press},
+  year      = {2018},
+  annote    = {The foundational textbook in RL, covering theory and core algorithms such as dynamic programming, TD learning, and policy gradient methods — essential for anyone studying RL.}
+}
+
+@article{sutton1988tdlearning,
+  title   = {Learning to predict by the methods of temporal differences},
+  author  = {Sutton, Richard S.},
+  journal = {Machine Learning},
+  year    = {1988},
+  volume  = {3},
+  number  = {1},
+  pages   = {9--44},
+  annote  = {Introduces temporal-difference (TD) learning, a cornerstone of RL that precedes and underlies many later methods such as Q-learning.}
+}
+
+@techreport{watkins1992qlearning,
+  title       = {Q-Learning},
+  author      = {Watkins, Christopher J. C. H. and Dayan, Peter},
+  institution = {Cambridge University Engineering Department},
+  year        = {1992},
+  annote      = {Introduces Q-learning, a foundational off-policy RL algorithm for discrete action spaces; basis for many later extensions (e.g., DQN).}
+}
+
+@article{williams1992reinforce,
+  title   = {Simple statistical gradient-following algorithms for connectionist reinforcement learning},
+  author  = {Williams, Ronald J.},
+  journal = {Machine Learning},
+  year    = {1992},
+  volume  = {8},
+  number  = {3--4},
+  pages   = {229--256},
+  annote  = {Defines the REINFORCE policy gradient algorithm, a foundational on-policy method directly optimizing expected returns.}
+}
+
+@article{tesauro1995tdgammon,
+  title   = {Temporal difference learning and TD-Gammon},
+  author  = {Tesauro, Gerald},
+  journal = {Communications of the ACM},
+  year    = {1995},
+  volume  = {38},
+  number  = {3},
+  pages   = {58--68},
+  annote  = {A pioneering neural network + RL system that achieved expert-level backgammon play using TD(λ), showing the power of combining learning with neural networks.}
+}
+
+@inproceedings{mnih2015dqn,
+  title     = {Human level control through deep reinforcement learning},
+  author    = {Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and others},
+  booktitle = {Nature},
+  year      = {2015},
+  annote    = {The Deep Q-Network (DQN) paper that ignited modern deep reinforcement learning by training an end-to-end neural agent on Atari games from pixels.}
+}
+
+@article{vanhasselt2016double,
+  title   = {Deep Reinforcement Learning with Double Q-Learning},
+  author  = {Van Hasselt, Hado and Guez, Arthur and Silver, David},
+  journal = {AAAI},
+  year    = {2016},
+  annote  = {Introduces Double DQN to reduce overestimation bias in Q-learning, improving stability and performance in deep RL.}
+}
+
+@inproceedings{hessel2018rainbow,
+  title     = {Rainbow: Combining Improvements in Deep Reinforcement Learning},
+  author    = {Hessel, Matteo and Modayil, Joseph and Van Hasselt, Hado and others},
+  booktitle = {AAAI},
+  year      = {2018},
+  annote    = {Unified “Rainbow” agent that integrates multiple DQN enhancements (Double, Prioritized Replay, Distributional, etc.), setting a strong benchmark in deep RL.}
+}
+
+@inproceedings{mnih2016asynchronous,
+  title     = {Asynchronous Methods for Deep Reinforcement Learning},
+  author    = {Mnih, Volodymyr and Badia, Adri{\`a} Puigdom{\`e}nech and Mirza, Mehdi and others},
+  booktitle = {ICML},
+  year      = {2016},
+  annote    = {Introduces A3C, a scalable parallel policy gradient method that helped the field move beyond purely value-based deep RL.}
+}
+
+@article{schulman2015trust,
+  title   = {Trust Region Policy Optimization},
+  author  = {Schulman, John and Levine, Sergey and Moritz, Philipp and others},
+  journal = {ICML},
+  year    = {2015},
+  annote  = {TRPO improves policy gradient learning by enforcing trust regions for more stable updates, a precursor to PPO.}
+}
+
+@article{schulman2017ppo,
+  title   = {Proximal Policy Optimization Algorithms},
+  author  = {Schulman, John and Wolski, Filip and Dhariwal, Prafulla and others},
+  journal = {arXiv preprint},
+  year    = {2017},
+  annote  = {PPO presents a simpler and efficient policy gradient method widely used in modern deep RL applications due to its robustness and performance.}
+}
+
+@article{lillicrap2015ddpg,
+  title   = {Continuous control with deep reinforcement learning},
+  author  = {Lillicrap, Timothy P. and Hunt, Jonathan J. and Pritzel, Alexander and others},
+  journal = {arXiv preprint},
+  year    = {2015},
+  annote  = {Deep Deterministic Policy Gradient (DDPG) extends deep RL to high-dimensional continuous action spaces using an actor-critic approach.}
+}
+
+@inproceedings{silver2016alphago,
+  title     = {Mastering the game of Go with deep neural networks and tree search},
+  author    = {Silver, David and Huang, Aja and Maddison, Chris J. and others},
+  booktitle = {Nature},
+  year      = {2016},
+  annote    = {AlphaGo demonstration of combining deep RL with Monte Carlo Tree Search to reach superhuman performance, cementing RL’s prominence in game AI.}
+}
+
+@inproceedings{silver2017alphagozero,
+  title     = {Mastering the game of Go without human knowledge},
+  author    = {Silver, David and Schrittwieser, Julian and Simonyan, Karen and others},
+  booktitle = {Nature},
+  year      = {2017},
+  annote    = {AlphaGo Zero learns tabula-rasa with self-play and reinforcement learning, illustrating the power of purely algorithmic learning.}
+}
+
+@article{haarnoja2017softq,
+  title   = {Reinforcement Learning with Deep Energy-Based Policies},
+  author  = {Haarnoja, Tuomas and Tang, Haoran and Abbeel, Pieter and Levine, Sergey},
+  journal = {arXiv preprint},
+  year    = {2017},
+  annote  = {Soft Q-learning / maximum entropy RL, advancing exploration and robustness in continuous control.}
+}
+
+@article{tapenade2025survey,
+  title   = {Comprehensive Survey of Reinforcement Learning},
+  author  = {Terven, J.},
+  journal = {MDPI},
+  year    = {2025},
+  annote  = {A recent survey covering traditional RL to modern deep RL, valuable for mapping trends and research directions.}
+}
+
+@software{stooke2019rlpyt,
+  title  = {rlpyt: A Research Code Base for Deep Reinforcement Learning in PyTorch},
+  author = {Stooke, Adam and Abbeel, Pieter},
+  year   = {2019},
+  url    = {https://github.com/astooke/rlpyt},
+  annote = {A comprehensive research codebase implementing many common deep RL algorithms for experimentation and benchmarking.}
+}
+
+@online{allenpandas_rlpapers,
+  title  = {Allenpandas/Reinforcement-Learning-Papers},
+  author = {{Allenpandas}},
+  year   = {2025},
+  url    = {https://github.com/Allenpandas/Reinforcement-Learning-Papers},
+  annote = {Curated GitHub repo of notable RL research papers across top conferences — great companion list for an Awesome RL bibliography.}
+}
+
+@online{yingchengyang_rlpapers,
+  title  = {Reinforcement Learning Papers (yingchengyang)},
+  author = {{yingchengyang}},
+  year   = {2025},
+  url    = {https://github.com/yingchengyang/Reinforcement-Learning-Papers},
+  annote = {Another community-maintained GitHub list covering classic and recent RL research across model-free and model-based areas.}
+}
